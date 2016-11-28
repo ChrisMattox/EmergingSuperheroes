@@ -1,0 +1,23 @@
+<div class ="mainPadding">
+  <h2>List of Heroes</h2>
+  <table class="table table-hover table-inverse">
+    <thead>
+      <tr>
+        <th>Persona</th>
+        <th>Alias</th>
+        <th>Power Set</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody id="container">
+      <tr ng-repeat='heroes in superpowers.heroes'>
+        <td ng-model='heroes.persona' >{{heroes.persona}}</td>
+        <td ng-model='heroes.alias' >{{heroes.alias}}</td>
+        <td ng-model='heroes.name' >{{heroes.name}}</td>
+        <td ng-model='heroes.description' >{{heroes.description}}</td>
+        <td ng-model='heroes.toggle'>
+        <button ng-click="superpowers.deleteHero(heroes)">DELETE</button>
+        </td>
+      </tbody>
+    </table>
+  </div>

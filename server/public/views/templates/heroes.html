@@ -1,0 +1,19 @@
+<div class ="mainPadding">
+<h2>Enter Hero Data</h2>
+<form id="superhero-form" ng-submit="hero.addHero()">
+  <div class="form-group">
+    <label for="persona">Superhero Persona:</label>
+    <input type="text" id="persona" ng-model="hero.newHero.persona" name="persona" class="form-control" placeholder="Persona" />
+  </div>
+  <div class="form-group">
+    <label for="alias">Superhero Alias:</label>
+    <input type="text" id="alias" ng-model="hero.newHero.alias" name="alias" class="form-control" placeholder="Last Name"/>
+  </div>
+  <div class="form-group">
+
+    <p> Select Power </p>
+    <select class="form-control" id="sel1" ng-model="hero.alias" ng-options="hero.heroes for hero in hero.alias"></select>
+  </div>
+  <button id="superhero-submit" class="btn btn-default">Submit Your Hero</button>
+</form>
+<div>
